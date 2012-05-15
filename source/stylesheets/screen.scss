@@ -122,5 +122,6 @@ p {
   @include paper-stack(#fff, #999);
   @include border-radius(2px);
   @include box-shadow(0 6px 8px rgba(0,0,0,0.15), 0 6px 8px rgba(0,0,0,0.05));
+  min-height: 50px;
   margin-bottom: 40px;
 }
