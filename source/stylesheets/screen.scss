@@ -58,6 +58,24 @@ a {
 #main {
   width: 700px;
   margin: 0 auto;
+  position: relative;
+}
+
+.github {
+  @include transition(opacity .2s ease-in);
+  display: block;
+  width: 100px;
+  height: 123px;
+  background: transparent url(/images/github.png) 0 0 no-repeat;
+  position: absolute;
+  right: -130px;
+  top: 0px;
+  opacity: 0.6;
+  text-indent: -100%;
+  overflow: hidden;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 h1 {
