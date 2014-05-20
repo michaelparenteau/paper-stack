@@ -5,7 +5,8 @@
 
 $link-color: #069;
 // assume min-width (by default) if only a number
-$high-tide: 720px;
+$medium-width: 860px;
+$large-width: 1025px;
 
 // The Paper Stacks Mixin
 // ======================
@@ -63,10 +64,11 @@ a {
   padding-bottom: 80px;
   margin: 0 auto;
   position: relative;
-  @include breakpoint($high-tide) {
+  }
+  @include breakpoint($medium-width) {
     width: 700px;
   }
-}
+
 
 .github {
   @include transition(opacity .2s ease-in);
@@ -86,7 +88,7 @@ a {
   &:hover {
     opacity: 1;
   }
-  @include breakpoint($high-tide) {
+  @include breakpoint($large-width) {
     width: 100px;
     height: 123px;
     background-size: 100px;
@@ -106,7 +108,7 @@ h1 {
   text-align: center;
   margin-top: 50px;
   letter-spacing: -4px;
-  @include breakpoint($high-tide) {
+  @include breakpoint($medium-width) {
     font-size: 50px;
   }
 
@@ -115,7 +117,7 @@ h1 {
     @include inline-block;
     padding: 5px 10px;
     margin-bottom: 30px;
-    @include breakpoint($high-tide) {
+    @include breakpoint($medium-width) {
       font-size: 50px;
       padding: 10px 15px;
     }
@@ -127,7 +129,7 @@ h2 {
   line-height: 1.4;
   text-align: center;
   margin: 0 0 10px 0;
-  @include breakpoint($high-tide) {
+  @include breakpoint($medium-width) {
     font-size: 24px;
     Text-align: left;
     margin: 10px 0;
@@ -167,7 +169,7 @@ div.paper-stack {
   padding: 0;
   margin: 0;
 }
-@include breakpoint($high-tide) {
+@include breakpoint($medium-width) {
   .mobile-br {
     display: inline-block;
   }
